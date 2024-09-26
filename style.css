@@ -335,3 +335,87 @@ footer {
     width: 100%;
     margin-top: auto;
 }
+
+@media (max-width: 768px) {
+    /* Navbar responsive adjustments */
+    #nav {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        top: 2%;
+    }
+    #nav > img {
+        width: 15%;
+    }
+    #nav > button {
+        padding: 10px 20px;
+    }
+
+    /* Heading and text adjustments for smaller screens */
+    #page > h1, #page1 > h1, #page4 > h1, 
+    #page > h4, #page1 > h4, #page4 > h4,
+    #right-page5 > h1, #right-page5 > h4,
+    .left-page6 > h1, .left-page6 > h4,
+    .left-page7 > h1, .left-page7 > h4,
+    .left-page8 > h1, .left-page8 > h4 {
+        font-size: 4vw;
+        padding: 0 5%;
+    }
+
+    /* Page layout changes for smaller screens */
+    #center-page5 {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    #left-page5, #right-page5,
+    .left-page6, .right-page6,
+    .left-page7, .right-page7,
+    .left-page8, .right-page8 {
+        height: auto;
+        width: 100%;
+    }
+
+    .right-page6 > video,
+    .right-page7 > video,
+    .right-page8 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer responsive adjustments */
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar mobile adjustments */
+    #nav {
+        width: 100vw;
+    }
+    #nav > img {
+        width: 20%;
+    }
+
+    /* Smaller font sizes for mobile */
+    #page > h1, #page1 > h1, #page4 > h1, 
+    #page > h4, #page1 > h4, #page4 > h4 {
+        font-size: 6vw;
+    }
+    #right-page5 > h1, #right-page5 > h4,
+    .left-page6 > h1, .left-page6 > h4,
+    .left-page7 > h1, .left-page7 > h4,
+    .left-page8 > h1, .left-page8 > h4 {
+        font-size: 4.5vw;
+    }
+
+    /* Video and image adjustments for smaller screens */
+    .right-page6 > video,
+    .right-page7 > video,
+    .right-page8 > img {
+        width: 100%;
+        height: auto;
+    }
+}
